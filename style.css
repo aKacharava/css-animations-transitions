@@ -24,7 +24,6 @@ html, body {
 
 .parent {
   display: block;
-  background-color: hsla(200, 100%, 20%);
   width: 300px;
   height: 300px;
   margin: 20px;
@@ -43,19 +42,23 @@ html, body {
 
 .stack-a {
   z-index: 4;
+  background-color: hsla(200, 100%, 20%);
 }
 
 .stack-b {
   z-index: 3;
+  background-color: rgb(8, 102, 0);
   animation: shuffle-three var(--speed) ease-in-out forwards 2s, shuffle-three var(--speed) ease-in-out forwards reverse 8s;
 }
 
 .stack-c {
   z-index: 2;
+  background-color: rgb(100, 102, 0);
   animation: shuffle-two var(--speed) ease-in-out forwards 1s, shuffle-two var(--speed) ease-in-out forwards reverse 7s;
 }
 
 .stack-d {
+  background-color: rgb(99, 0, 102);
   animation: shuffle-one var(--speed) ease-in-out forwards, shuffle-one var(--speed) ease-in-out forwards reverse 6s;
 }
 
