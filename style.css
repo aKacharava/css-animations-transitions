@@ -47,16 +47,16 @@ html, body {
 
 .stack-b {
   z-index: 3;
-  animation: shuffle-three var(--speed) ease-in-out forwards 2s, shuffle-three var(--speed) ease-in-out forwards reverse 5s;
+  animation: shuffle-three var(--speed) ease-in-out forwards 2s, shuffle-three var(--speed) ease-in-out forwards reverse 8s;
 }
 
 .stack-c {
   z-index: 2;
-  animation: shuffle-two var(--speed) ease-in-out forwards 1s, shuffle-two var(--speed) ease-in-out forwards reverse 4s;
+  animation: shuffle-two var(--speed) ease-in-out forwards 1s, shuffle-two var(--speed) ease-in-out forwards reverse 7s;
 }
 
 .stack-d {
-  animation: shuffle-one var(--speed) ease-in-out forwards, shuffle-one var(--speed) ease-in-out forwards reverse 3s;
+  animation: shuffle-one var(--speed) ease-in-out forwards, shuffle-one var(--speed) ease-in-out forwards reverse 6s;
 }
 
 .animate-u {
