@@ -47,26 +47,17 @@ html, body {
 
 .stack-b {
   z-index: 3;
+  animation: shuffle-three var(--speed) ease-in-out forwards 2s;
 }
 
 .stack-c {
   z-index: 2;
+  animation: shuffle-two var(--speed) ease-in-out forwards 1s;
 }
 
 .stack-d {
   z-index: 1;
-}
-
-.b {
-  background-color: cadetblue;
-}
-
-.c {
-  background-color: yellow;
-}
-
-.d {
-  background-color: green;
+  animation: shuffle-one var(--speed) ease-in-out forwards;
 }
 
 .animate-u {
@@ -174,5 +165,23 @@ html, body {
   }
   100% {
     transform: translateX(100%) translateY(100%);
+  }
+}
+
+@keyframes shuffle-one {
+  100% {
+    transform: translateX(25vw);
+  }
+}
+
+@keyframes shuffle-two {
+  100% {
+    transform: translateX(50vw);
+  }
+}
+
+@keyframes shuffle-three {
+  100% {
+    transform: translateX(75vw);
   }
 }
