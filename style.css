@@ -47,17 +47,16 @@ html, body {
 
 .stack-b {
   z-index: 3;
-  animation: shuffle-three var(--speed) ease-in-out forwards 2s;
+  animation: shuffle-three var(--speed) ease-in-out forwards 2s, shuffle-three var(--speed) ease-in-out forwards reverse 5s;
 }
 
 .stack-c {
   z-index: 2;
-  animation: shuffle-two var(--speed) ease-in-out forwards 1s;
+  animation: shuffle-two var(--speed) ease-in-out forwards 1s, shuffle-two var(--speed) ease-in-out forwards reverse 4s;
 }
 
 .stack-d {
-  z-index: 1;
-  animation: shuffle-one var(--speed) ease-in-out forwards;
+  animation: shuffle-one var(--speed) ease-in-out forwards, shuffle-one var(--speed) ease-in-out forwards reverse 3s;
 }
 
 .animate-u {
@@ -169,18 +168,29 @@ html, body {
 }
 
 @keyframes shuffle-one {
+  0% {
+    transform: translateX(0);
+    z-index: 1;
+  }
   100% {
+    z-index: 1;
     transform: translateX(25vw);
   }
 }
 
 @keyframes shuffle-two {
+  0% {
+    transform: translateX(0);
+  }
   100% {
     transform: translateX(50vw);
   }
 }
 
 @keyframes shuffle-three {
+  0% {
+    transform: translateX(0);
+  }
   100% {
     transform: translateX(75vw);
   }
